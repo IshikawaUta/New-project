@@ -8,8 +8,7 @@ body {
 
 .alert {
     position: absolute;
-    top: 10px;
-    left: 50%;
+    align-items: center;
     padding: 20px;
     background-color: white;
     font-family: courier;
