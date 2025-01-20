@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installasi neofetch</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Uta Blogspot</h1>
+    <input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="#">Layanan</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="description">
+        <h2>Installasi neofetch</h2>
+        <img src="img/neofetch.jpg" width="150" style="border-radius: 10px;">
+        <div style="text-align: left;">
+        <p><strong>Neofetch </strong>adalah alat informasi sistem yang sudah tidak dikembangkan lagi yang ditulis dalam bahasa skrip shell Bash, tampilan default neofetch, di sisi kiri terdapat logo distribusi, yang ditampilkan dalam seni ASCII, alat ini menampilkan tampilan statis konfigurasi perangkat keras dan perangkat lunak dasar komputer dan versinya, biasanya sistem operasi, host, waktu aktif, manajer paket, shell, resolusi tampilan, lingkungan desktop, manajer jendela, tema dan ikon, terminal komputer, CPU, GPU, dan RAM. Neofetch juga dapat menampilkan gambar di terminal dengan w3m -img atau Sixel sebagai pengganti seni logo ASCII.</p><br>
+        <h3>Command installasi</h3>
+        <p>langkah pertama update terminal</p>
+        <p class="border">sudo apt update</p>
+        <p>langkah kedua install neofetch</p>
+        <p class="border">sudo apt install neofetch</p>
+        <p>langkah ketiga jalankan neofetch</p>
+        <p class="border">neofetch</p><br>
+        <h3>Konfigurasi ke shell bash</h3>
+        <p>jika anda menggunakan shell bash</p>
+        <p>buka file .bashrc</p>
+        <p class="border">nano .bashrc</p>
+        <p>tambahkan kode ini di bagian akhir</p>
+        <p class="border">clear<br>neofetch</p>
+        <p>lalu tekan ctrl+x pilih y lalu enter</p>
+        <p>lalu restart terminal</p><br>
+        <h3>Konfigurasi ke shell zsh</h3>
+        <p>jika anda menggunakan shell zsh</p>
+        <p>buka file .zshrc</p>
+        <p class="border">nano .zshrc</p>
+        <p>tambahkan kode ini di bagian akhir</p>
+        <p class="border">clear<br>neofetch</p>
+        <p>lalu tekan ctrl+x pilih y lalu enter</p>
+        <p>lalu restart terminal</p><br>
+        <h3>Mengubah tampilan config</h3>
+        <img src="img/tampilan-config.jpg" width="150" style="border-radius: 10px;">
+        <p>buka file config.conf</p>
+        <p class="border">nano .config/neofetch/config.conf</p>
+        <p>hapus semua isi yang ada di file tersebut, lalu copy file ini paste-kan kedalam file tersebut</p>
+        <p class="border"><a href="file/config.txt" style="color: white;">config.conf</a></p>
+        <p>lalu tekan ctrl+x pilih y lalu enter</p>
+        <p>lalu restart terminal</p>
+        </div>
+    </div>
+</div>
+
+<h3 class="contact">Kontak Kami</h3>
+<center>
+<a href="https://wa.me/+62895701060973?text=hallo%20ka"><img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" width="40" class="filter"/></a>
+<a href="https://github.com/IshikawaUta"><img src="https://img.icons8.com/plasticine/100/000000/github.png" width="40" class="filter"/></a>
+<a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=komikers09@gmail.com"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png" width="40" class="filter"/></a>
+</center>
+
+<footer>
+    <p>&copy; 2025 Uta Blogspot. Semua hak dilindungi.</p>
+</footer>
+
+</body>
+</html>

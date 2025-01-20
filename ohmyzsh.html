@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installasi termux-ohmyzsh</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Uta Blogspot</h1>
+    <input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="#">Layanan</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="description">
+        <h2>Installasi ohmyzsh</h2>
+        <img src="img/ohmyzsh.png" width="150">
+        <div style="text-align: left;">
+        <p><strong>OhMyZsh</strong> adalah kerangka kerja sumber terbuka untuk mengelola konfigurasi Zsh, Anda bisa menggunakan ohmyzsh untuk menyesuaikan terminal sesuai keinginan dan menambahkan plugin dan fungsi pembantu yang berguna untuk meningkatkan produktivitas dan membuat penggunaan terminal lebih aesthetic.</p>
+        <h3>Command installasi</h3>
+        <p>langkah pertama update terminal</p>
+        <p class="border">sudo apt update</p>
+        <p>langkah kedua install git</p>
+        <p class="border">sudo apt install git</p>
+        <p>langkah ketiga install zsh</p>
+        <p class="border">sudo apt install zsh</p>
+        <p>langkah keempat install ohmyzsh</p>
+        <p class="border">sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/<br>ohmyzsh/master/tools/install.sh)"</p>
+        <p>langkah kelima mengatur shell zsh menjadi default</p>
+        <p class="border">chsh -s $(which zsh)</p>
+        <p>langkah keenam install termux-ohmyzsh</p>
+        <p class="border">git clone https://github.com/termux/termux-ohmyzsh.git ~/.oh-my-zsh/custom/plugins/termux</p>
+        <p>langkah ketujuh memuat ulang konfigurasi zsh</p>
+        <p class="border">source ~/.zshrc</p>
+        <p>lalu restart terminal</p>
+        </div>
+    </div>
+</div>
+
+<h3 class="contact">Kontak Kami</h3>
+<center>
+<a href="https://wa.me/+62895701060973?text=hallo%20ka"><img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" width="40" class="filter"/></a>
+<a href="https://github.com/IshikawaUta"><img src="https://img.icons8.com/plasticine/100/000000/github.png" width="40" class="filter"/></a>
+<a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=komikers09@gmail.com"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png" width="40" class="filter"/></a>
+</center>
+
+<footer>
+    <p>&copy; 2025 Uta Blogspot. Semua hak dilindungi.</p>
+</footer>
+
+</body>
+</html>

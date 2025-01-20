@@ -1,0 +1,229 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #35424a;
+    width: 100%;
+    height: 21%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: underline;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    display: block;
+}
+
+nav a:hover {
+    letter-spacing: 1px;
+}
+
+#menu-toggle {
+    opacity: 0;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+#menu-toggle:checked + .hamburger span {
+    opacity: 1;
+    transform: rotate(270deg) translate(0px, -1px);
+    background: white;
+}
+
+#menu-toggle:checked + .hamburger span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu-toggle:checked + .hamburger span:nth-last-child(2) {
+    transform: rotate(0deg) translate(-3px, 11px);
+}
+
+#menu-toggle:checked ~ nav {
+    max-height: 500px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card1 {
+    background: #35424a;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card1:hover {
+    transform: scale(1.05);
+}
+
+.description {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.border {
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    padding: 6px;
+}
+
+.profile {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.profile:hover {
+    transform: scale(1.05);
+}
+
+.decoration {
+    text-decoration: none;
+    color: black;
+}
+
+.decoration:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.decoration1 {
+    text-decoration: none;
+    color: white;
+}
+
+.decoration1:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.contact {
+    color: gray;
+    margin-bottom: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.filter {
+    filter: grayscale(1);
+}
+
+.filter:hover {
+    filter: grayscale(0);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+    .card1 {
+        width: 90%;
+    }
+    .profile {
+        width: 90%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+}
