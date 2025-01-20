@@ -136,7 +136,7 @@ nav a:hover {
     text-align: center;
     margin: 10px;
     padding: 20px;
-    width: 600px;
+    width: 800px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
@@ -158,10 +158,6 @@ nav a:hover {
     width: 800px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-}
-
-.profile:hover {
-    transform: scale(1.05);
 }
 
 .decoration {
