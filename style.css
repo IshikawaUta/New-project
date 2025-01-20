@@ -9,11 +9,12 @@ body {
 .alert {
     position: absolute;
     top: 10px;
+    left: 50%;
     padding: 20px;
-    background-color: #35424a;
+    background-color: white;
     font-family: courier;
     text-transfrom: uppercase;
-    color: white;
+    color: #35424a;
     margin-bottom: 15px;
     border-radius: 5px;
 }
