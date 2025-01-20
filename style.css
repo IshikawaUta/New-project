@@ -30,7 +30,7 @@ body {
 }
 
 .alert .closebtn:hover {
-    color: black;
+    color: gray;
 }
 
 header {
