@@ -8,7 +8,8 @@ body {
 
 .alert {
     position: absolute;
-    align-items: center;
+    top: 10px;
+    left: 50%;
     padding: 20px;
     background-color: white;
     font-family: courier;
@@ -20,7 +21,7 @@ body {
 
 .alert .closebtn {
     margin-left: 15px;
-    color: white;
+    color: #35424a;
     font-weight: bold;
     float: right;
     font-size: 20px;
